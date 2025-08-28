@@ -1,0 +1,14 @@
+<h1>Welcome to my page!</h1>
+<div class="main-container">
+<div class="tea-w-bubble-container">
+  <div class="bubble shadow top" (click)="onClick()">
+    <span class="span-wrap"
+      ><span class="type" [style.--chars]="typeService.messages.length"> {{ typeService.visible() }}</span></span
+    >
+  </div>
+    <img  ngSrc="/black_tea_pixel.png" alt="Black tea" width="200" height="200" priority/>
+</div>
+<div class="btn-container">
+<button class="restart-btn" (click)="onRestart()">Restart</button>
+</div>
+</div>

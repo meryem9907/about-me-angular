@@ -1,0 +1,94 @@
+<div *ngIf="typeService.showModal()">
+<ng-container [ngSwitch]="contentType()">
+  <ng-container *ngSwitchCase="'skills'" [ngTemplateOutlet]="skills"></ng-container>
+  <ng-container *ngSwitchCase="'aims'" [ngTemplateOutlet]="aims"></ng-container>
+  <ng-container *ngSwitchCase="'interests'" [ngTemplateOutlet]="interests"></ng-container>
+  <ng-container *ngSwitchCase="'mindset'" [ngTemplateOutlet]="mindset"></ng-container>
+</ng-container>
+</div>
+
+<ng-template #skills
+  ><div class="modal-overlay" (click)="toggleModal()">
+    <div class="modal-box">
+      <h2>{{ contentType() }}</h2>
+      <h3>Technical Skills</h3>
+      <p>
+        <li>Programming languages: Python, Java, JS, Html, CSS, Rust, C, Kotlin</li>
+        <li>Frameworks & Libraries: Angular, React, Express, Flask, Leptos</li>
+        <li>
+          AI & Machine Learning: Inference and Finetuning of OOS LLMs (Hugging Face, Ollama), AI
+          tools, prompt engineering
+        </li>
+        <li>Cybersecurity: Knowledge of threat modeling and secure coding practices</li>
+        <li>Other: full stack web dev, efficient data processing via celery</li>
+      </p>
+      <h3>Some projects:</h3>
+      <p>
+        <li>
+          Local LLM Student Guide (jupyter notebook) - Authored a step-by-step guide for students to
+          set up and run local llms, covering installation, model fine-tuning, and inference
+          workflows.
+        </li>
+        <li>
+          Stray animal adoption web app - Developed a platform that matches stray animals with
+          suitable owners, integrating animal profiles, user matching algorithms and an intuitive
+          ui.
+        </li>
+      </p>
+    </div>
+  </div>
+</ng-template>
+<ng-template #aims>
+  <div class="modal-overlay" (click)="toggleModal()">
+    <div class="modal-box">
+      <h2>{{ contentType() }}</h2>
+      <p>
+        As of the beginning of 2025 I commited myself to following goals:
+        <li>learn italian 25 min. daily</li>
+        <li>practice communication skills 25 min. daily</li>
+        <li>practice on a coding project 30 min. daily</li>
+        <li>sugar-free diet</li>
+        <li>1 h 30 min. cardio per week</li>
+      </p>
+    </div>
+  </div>
+</ng-template>
+<ng-template #interests>
+  <div class="modal-overlay" (click)="toggleModal()">
+    <div class="modal-box">
+      <h2>{{ contentType() }}</h2>
+      <p>
+        In my free time, I enjoy developing practical skills, such as:
+        <li>reading from my curated book list</li>
+        <li>experimenting with new recipes</li>
+        <li>building shelters for stray animals</li>
+        <li>drafting interior design concepts</li>
+        <li>exploring films from my watchlist</li>
+      </p>
+    </div>
+  </div>
+</ng-template>
+<ng-template #mindset>
+  <div class="modal-overlay" (click)="toggleModal()">
+    <div class="modal-box">
+      <h2>{{ contentType() }}</h2>
+      <p>
+        My guiding principles
+        <li>
+          Deep Learning - As Erich Fromm said, "Knowledge means penetrating beyond the surface to
+          the roots, and thus to the causes." I strive to understand problems at their core before
+          creating solutions.
+        </li>
+        <li>
+          Resilience in Hardship - I believe that character is forged through challenges, and I
+          embrace difficulties as opportunities to grow.
+        </li>
+        <li>
+          Gentleness and Goodness - I aspire to contribute to a workplace and society that is as
+          gentle and respectful as flowers 🌸, valuing empathy alongside growth.
+        </li>
+      </p>
+    </div>
+  </div>
+</ng-template>
+
