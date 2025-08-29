@@ -4,13 +4,13 @@ import { Injectable, signal } from '@angular/core';
 export class TypeService {
   messages = [
     '...',
-    'Hello, my friend! Glad you found me!',
-    'How about I tell you about myself while sipping a delicious turkish tea?',
-    'Sounds great?',
-    "Let's go!!!",
-    'First short introduction: My name is Meryem Ünüvar and ...',
-    '...my passion is programming.',
-    'What would you like to know about me?',
+    'Hey there, traveler! You’ve unlocked my secret page 👾',
+    'Pull up a chair — how about we chat over a cozy cup of matcha latte? 🍵💚',
+    'Sounds like a quest you’re ready for?',
+    'Alright then… *LEVEL 1: Introduction begins!* 🎮',
+    'My name is Meryem Ünüvar — part human, part code sorcerer 🧙‍♀️💻',
+    'My ultimate power-up? Programming… lots and lots of programming ⚡',
+    'So, hero, what do you want to explore next? 🎯 (Interests, Skills, Mindset…)',
   ];
   msgCounter = signal(0);
   currentMessage = signal(this.messages[this.msgCounter()]);

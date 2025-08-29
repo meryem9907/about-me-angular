@@ -1,17 +1,16 @@
 .modal {
-  transform: scale(0);
-  animation: popIn 0.5s cubic-bezier(0.59, 0.52, 0, 1.18) forwards;
+  animation: popIn 0.5s cubic-bezier(0.59, 0.52, 0, 1.18) forwards; /*https://cubic-bezier.com/*/
 }
 @keyframes popIn {
   to {
     transform: scale(1);
   }
 }
+
 .pixel-list {
-  list-style: none; /* remove default bullets */
-  padding: 0;
+  list-style: none;
   margin: 2rem auto;
-  width: fit-content; /* shrink to content */
+  width: fit-content;
   font-size: 14px;
   color: #000;
 }
@@ -22,8 +21,6 @@
   padding: 8px 16px;
   cursor: pointer;
   text-align: center;
-
-  /* pixel “border” effect */
   box-shadow:
     0 -2px #000,
     0 2px #000,
@@ -33,11 +30,10 @@
     2px -2px #000,
     -2px 2px #000,
     2px 2px #000;
-
   transition: transform 0.1s;
 }
 
 .pixel-list li:hover {
-  background: #fdd835;
+  background: var(--yellow);
   transform: scale(1.05) rotate(1deg);
 }

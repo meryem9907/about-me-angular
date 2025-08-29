@@ -5,7 +5,12 @@ h1 {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  color: #4f4f4f;
+  color: var(--green);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .tea-w-bubble-container {
@@ -52,7 +57,7 @@ img {
 }
 
 .wiggle {
-  animation: wiggle 5s ease infinite;
+  animation: wiggle 3.4s ease infinite;
 }
 
 @keyframes wiggle {
@@ -133,6 +138,8 @@ img {
 
 .bubble:hover {
   transform: scale(1.05) rotate(2deg);
+  transition: all 0.2s ease;
+
   cursor: pointer;
 }
 
@@ -159,40 +166,6 @@ img {
   justify-content: center;
   margin-top: 2rem;
   width: 100%;
-}
-
-.restart-btn {
-  width: 130px;
-  margin-left: 30rem;
-  background-color: #fff;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow:
-    1px 1px 0px 0px,
-    2px 2px 0px 0px,
-    3px 3px 0px 0px,
-    4px 4px 0px 0px,
-    5px 5px 0px 0px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.restart-btn:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-.restart-btn:hover {
-  background: #fdd835;
-  transform: scale(1.05) rotate(1deg);
 }
 
 @media (min-width: 768px) {
