@@ -8,9 +8,8 @@ describe('ContentBar', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContentBar]
-    })
-    .compileComponents();
+      imports: [ContentBar],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ContentBar);
     component = fixture.componentInstance;

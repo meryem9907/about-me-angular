@@ -1,15 +1,15 @@
 <div *ngIf="typeService.showModal()">
-<ng-container [ngSwitch]="contentType()">
-  <ng-container *ngSwitchCase="'skills'" [ngTemplateOutlet]="skills"></ng-container>
-  <ng-container *ngSwitchCase="'aims'" [ngTemplateOutlet]="aims"></ng-container>
-  <ng-container *ngSwitchCase="'interests'" [ngTemplateOutlet]="interests"></ng-container>
-  <ng-container *ngSwitchCase="'mindset'" [ngTemplateOutlet]="mindset"></ng-container>
-</ng-container>
+  <ng-container [ngSwitch]="contentType()">
+    <ng-container *ngSwitchCase="'skills'" [ngTemplateOutlet]="skills"></ng-container>
+    <ng-container *ngSwitchCase="'aims'" [ngTemplateOutlet]="aims"></ng-container>
+    <ng-container *ngSwitchCase="'interests'" [ngTemplateOutlet]="interests"></ng-container>
+    <ng-container *ngSwitchCase="'mindset'" [ngTemplateOutlet]="mindset"></ng-container>
+  </ng-container>
 </div>
 
 <ng-template #skills
   ><div class="modal-overlay" (click)="toggleModal()">
-    <div class="modal-box">
+    <div class="modal-box" (click)="$event.stopPropagation()">
       <h2>{{ contentType() }}</h2>
       <h3>Technical Skills</h3>
       <p>
@@ -40,7 +40,7 @@
 </ng-template>
 <ng-template #aims>
   <div class="modal-overlay" (click)="toggleModal()">
-    <div class="modal-box">
+    <div class="modal-box" (click)="$event.stopPropagation()">
       <h2>{{ contentType() }}</h2>
       <p>
         As of the beginning of 2025 I commited myself to following goals:
@@ -55,7 +55,7 @@
 </ng-template>
 <ng-template #interests>
   <div class="modal-overlay" (click)="toggleModal()">
-    <div class="modal-box">
+    <div class="modal-box" (click)="$event.stopPropagation()">
       <h2>{{ contentType() }}</h2>
       <p>
         In my free time, I enjoy developing practical skills, such as:
@@ -70,7 +70,7 @@
 </ng-template>
 <ng-template #mindset>
   <div class="modal-overlay" (click)="toggleModal()">
-    <div class="modal-box">
+    <div class="modal-box" (click)="$event.stopPropagation()">
       <h2>{{ contentType() }}</h2>
       <p>
         My guiding principles
@@ -91,4 +91,3 @@
     </div>
   </div>
 </ng-template>
-

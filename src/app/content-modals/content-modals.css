@@ -16,9 +16,10 @@
   background-color: rgba(224, 217, 100, 0.8);
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 1050;
 }
 h3 {
-    text-align: center;
+  text-align: center;
 }
 p {
   background-color: transparent;

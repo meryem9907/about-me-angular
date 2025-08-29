@@ -8,23 +8,23 @@ import { TypeService } from '../start-page/type.service';
   styleUrl: './content-bar.css',
 })
 export class ContentBar {
-  contentType = output<string>()
-  typeService = inject(TypeService)
+  contentType = output<string>();
+  typeService = inject(TypeService);
 
   onInterests() {
-    this.typeService.showModal.set(true)
-    this.contentType.emit("interests");
+    this.typeService.showModal.set(true);
+    this.contentType.emit('interests');
   }
   onSkills() {
-    this.typeService.showModal.set(true)
-    this.contentType.emit("skills");
+    this.typeService.showModal.set(true);
+    this.contentType.emit('skills');
   }
   onPersonalAims() {
-    this.typeService.showModal.set(true)
-    this.contentType.emit("aims");
+    this.typeService.showModal.set(true);
+    this.contentType.emit('aims');
   }
   onMindset() {
-    this.typeService.showModal.set(true)
-    this.contentType.emit("mindset");
+    this.typeService.showModal.set(true);
+    this.contentType.emit('mindset');
   }
 }

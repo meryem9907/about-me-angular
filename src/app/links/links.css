@@ -1,16 +1,17 @@
 .links {
-    display: flex;
-    margin-top: 2rem;
-    padding: 20px;
-    justify-content: end;
-    border-top: solid #000;
+  display: flex;
+  margin-top: 2rem;
+  padding: 20px;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 4px solid;
 }
 
-
-
-button {    
-    margin: 0 5px;
-
+button {
+  width: auto;
+  min-width: fit-content;
+  margin: 0 5px;
+  position: relative;
   background-color: #fff;
   font-size: 16px;
   letter-spacing: 2px;
@@ -20,12 +21,16 @@ button {
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow:
+    1px 1px 0px 0px,
+    2px 2px 0px 0px,
+    3px 3px 0px 0px,
+    4px 4px 0px 0px,
+    5px 5px 0px 0px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 
 button:active {
   box-shadow: 0px 0px 0px 0px;
@@ -34,6 +39,6 @@ button:active {
 }
 
 button:hover {
-   background: #fdd835;  
-  transform: scale(1.05) rotate(1deg); 
+  background: #fdd835;
+  transform: scale(1.05) rotate(1deg);
 }

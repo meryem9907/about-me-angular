@@ -1,7 +1,3 @@
-* {
-  font-family: 'Silkscreen', sans-serif;
-}
-
 h1 {
   justify-content: center;
   margin-top: 5rem;
@@ -9,10 +5,8 @@ h1 {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
-
-
 
 .tea-w-bubble-container {
   justify-content: center;
@@ -22,16 +16,16 @@ h1 {
 }
 
 img {
+  width: 200px;
   height: auto;
   border: none;
   margin-top: 2rem;
-  display:inline-block flow-root;
+  display: inline-block flow-root;
   position: relative;
 }
 
 .bubble {
   position: relative;
-  
   display: inline-block;
   margin: 20px;
   margin-top: 40px;
@@ -39,17 +33,74 @@ img {
   background-color: #fff;
   color: #000;
   padding: 4px;
-  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff,
-    0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000;
+  box-shadow:
+    0 -4px #fff,
+    0 -8px #000,
+    4px 0 #fff,
+    4px -4px #000,
+    8px 0 #000,
+    0 4px #fff,
+    0 8px #000,
+    -4px 0 #fff,
+    -4px 4px #000,
+    -8px 0 #000,
+    -4px -4px #000,
+    4px 4px #000;
   box-sizing: border-box;
-  width: 200px;
-  height: 75px;
+  width: 11rem;
+  height: 100px;
+}
+
+.wiggle {
+  animation: wiggle 5s ease infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  15% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bubble > * {
+  flex: 1 1 auto; /* items can shrink and grow */
+  min-width: 150px; /* don’t shrink smaller than this */
 }
 
 .bubble.shadow {
-  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff,
-    0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000,
-    4px 12px rgba(0, 0, 0, 0.5), 12px 4px rgba(0, 0, 0, 0.5), 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 -4px #fff,
+    0 -8px #000,
+    4px 0 #fff,
+    4px -4px #000,
+    8px 0 #000,
+    0 4px #fff,
+    0 8px #000,
+    -4px 0 #fff,
+    -4px 4px #000,
+    -8px 0 #000,
+    -4px -4px #000,
+    4px 4px #000,
+    4px 12px rgba(0, 0, 0, 0.5),
+    12px 4px rgba(0, 0, 0, 0.5),
+    8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .bubble::after {
@@ -59,13 +110,24 @@ img {
   box-sizing: border-box;
 }
 
-.bubble.top::after {
+.bubble.bottom::after {
   height: 4px;
   width: 4px;
-  bottom: -8px; /* -2 * 4px */
-  right: 32px; /* 8 * 4px */
-  box-shadow: 0 4px #000, 0 8px #000, 0 12px #000, 0 16px #000, -4px 12px #000, -8px 8px #000,
-    -12px 4px #000, -4px 4px #fff, -8px 4px #fff, -4px 8px #fff, -4px 0 #fff, -8px 0 #fff,
+  bottom: -8px;
+  right: 32px;
+  box-shadow:
+    0 4px #000,
+    0 8px #000,
+    0 12px #000,
+    0 16px #000,
+    -4px 12px #000,
+    -8px 8px #000,
+    -12px 4px #000,
+    -4px 4px #fff,
+    -8px 4px #fff,
+    -4px 8px #fff,
+    -4px 0 #fff,
+    -8px 0 #fff,
     -12px 0 #fff;
 }
 
@@ -78,7 +140,6 @@ img {
   display: inline-block;
   width: 100%;
   background-color: transparent;
-  
 }
 
 .type {
@@ -90,17 +151,19 @@ img {
   letter-spacing: 0.3em;
   overflow: hidden;
   white-space: pre-wrap;
-   word-break: break-word; 
+  word-break: break-word;
 }
 
 .btn-container {
-  position: relative;
   display: flex;
- transform: translateX(65%);
+  justify-content: center;
   margin-top: 2rem;
-
+  width: 100%;
 }
+
 .restart-btn {
+  width: 130px;
+  margin-left: 30rem;
   background-color: #fff;
   font-size: 16px;
   letter-spacing: 2px;
@@ -110,12 +173,16 @@ img {
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow:
+    1px 1px 0px 0px,
+    2px 2px 0px 0px,
+    3px 3px 0px 0px,
+    4px 4px 0px 0px,
+    5px 5px 0px 0px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 
 .restart-btn:active {
   box-shadow: 0px 0px 0px 0px;
@@ -124,8 +191,8 @@ img {
 }
 
 .restart-btn:hover {
-   background: #fdd835;  
-  transform: scale(1.05) rotate(1deg); 
+  background: #fdd835;
+  transform: scale(1.05) rotate(1deg);
 }
 
 @media (min-width: 768px) {
@@ -134,4 +201,8 @@ img {
   }
 }
 
-
+@media (max-width: 700px) {
+  .restart-btn {
+    margin-left: 20rem;
+  }
+}

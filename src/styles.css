@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-*{
- background-color:#F5EBDD;
+* {
+  background-color: #f5ebdd;
+  font-family: 'Silkscreen', sans-serif;
+  width: 100%;
+}
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
 }

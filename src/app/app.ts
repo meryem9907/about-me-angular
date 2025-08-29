@@ -10,19 +10,18 @@ import { Links } from './links/links';
   selector: 'app-root',
   imports: [RouterOutlet, StartPage, ContentBar, Links, CommonModule, ContentModals],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('about-me-page');
-  showContentBar = signal(false)
-contentType=signal<string>("")
-  onContentChange(showContentBar:boolean) {
-    this.showContentBar.set(showContentBar)
-
+  showContentBar = signal(false);
+  contentType = signal<string>('');
+  onContentChange(showContentBar: boolean) {
+    this.showContentBar.set(showContentBar);
   }
 
-receiveContent(contentType:string) {
-  this.contentType.set(contentType)
-  console.log(`Received ${this.contentType()}`)
-}
+  receiveContent(contentType: string) {
+    this.contentType.set(contentType);
+    console.log(`Received ${this.contentType()}`);
+  }
 }

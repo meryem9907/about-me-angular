@@ -1,4 +1,4 @@
-import { NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import {
   Component,
   effect,
@@ -14,13 +14,15 @@ import { TypeService } from './type.service';
 
 @Component({
   selector: 'app-start-page',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, CommonModule],
   templateUrl: './start-page.html',
   styleUrl: './start-page.css',
 })
 export class StartPage implements OnDestroy {
   showContentBar = output<boolean>();
   typeService = inject(TypeService);
+  wiggle = signal(true);
+  showButton = signal(false);
 
   constructor() {
     effect(() => {
@@ -32,9 +34,13 @@ export class StartPage implements OnDestroy {
   onRestart() {
     this.typeService.restart();
     this.showContentBar.emit(false);
+    this.wiggle.set(true);
+    this.showButton.set(false);
   }
 
   onClick() {
+    this.showButton.set(true);
+    this.wiggle.set(false);
     if (this.typeService.msgCounter() + 1 == this.typeService.messages.length) {
       this.typeService.currentMessage.set(this.typeService.messages[this.typeService.msgCounter()]);
       return;
@@ -48,7 +54,9 @@ export class StartPage implements OnDestroy {
   }
 
   ngOnDestroy() {
+    this.wiggle.set(true);
     this.typeService.clearTimer();
-    this.onRestart()
+    this.onRestart();
+    this.showButton.set(false);
   }
 }

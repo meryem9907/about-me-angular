@@ -16,7 +16,7 @@ export class TypeService {
   currentMessage = signal(this.messages[this.msgCounter()]);
   speed = 30;
   visible = signal('');
-  showModal = signal(true)
+  showModal = signal(true);
 
   private timer: number | undefined | null = null;
   private charInd = signal(0);
@@ -42,7 +42,7 @@ export class TypeService {
     this.clearTimer();
     this.visible.set('...');
     this.charInd.set(0);
-    this.showModal.set(false)
+    this.showModal.set(false);
   }
 
   clearTimer() {
