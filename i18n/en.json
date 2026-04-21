@@ -1,0 +1,81 @@
+{
+  "LANGUAGE": {
+    "CURRENT": "{{lang}} | >>"
+  },
+  "welcome": "Welcome to my page!",
+  "message": {
+    "part1": "Hey there, traveler! You’ve unlocked my secret page 👾",
+    "part2": "Pull up a chair — how about we chat over a cozy cup of matcha latte? 🍵💚",
+    "part3": "Sounds like a quest you’re ready for?",
+    "part4": "Alright then… *LEVEL 1: Introduction begins!* 🎮",
+    "part5": "My name is Meryem Ünüvar — part human, part code sorcerer 🧙‍♀️💻",
+    "part6": "My ultimate power-up? Webdevelopment… Frontend and Backend - I love everything about it!⚡",
+    "part7": "So, hero, what do you want to explore next? 🎯 (Interests, Skills, Mindset…)"
+  },
+  "restart": "Reset",
+  "career": {
+    "header": "Professional Career",
+    "startStudy": "Started studying computer science at Technische Hochschule Augsburg",
+    "endStudy": "Graduated in computer science with a Bachelor of Science degree at Technische Hochschule Augsburg",
+    "2022-2026": "Study Period: Computer Science B.Sc.",
+    "iam1": "4-month Working Student at IAM Solutions – Angular Frontend Development",
+    "iam2": "Developed and integrated features into an Angular-based access management platform, including WCAG compliance via Lighthouse audits, a custom CSV export functionality, extended localization using Weblate, improved error handling, and REST API prototyping with Mockoon-",
+    "forvia1": "4-month Internship at Forvia",
+    "forvia2": "Implemented a Celery and Redis-based message queue in a Python (Flask) REST backend to improve request throughput. Also gained hands-on experience with Docker, microservices architecture using Kubernetes, and Angular frontend development."
+  },
+  "projects": {
+    "past": {
+      "past": "Past",
+      "header": "Projects",
+      "thesis1": "Chart Understanding of VLMs on a Mixed Reality Platform",
+      "bitcraze1": "Autonomous drone-based elevation mapping (Bitcraze)",
+      "home4strays1": "Self-initiated semester project: “Home4Strays”",
+      "hands-on-ai1": "Development of a “hands-on” language AI using Jupyter Notebooks",
+      "thesis2": "Designed and implemented “Cha-Cha Lens,” an XR application for HoloLens 2 that enables visually impaired users to interpret charts using a locally hosted vision-language model. Developed a containerized REST backend with FastAPI and Uvicorn, secured via a Caddy reverse proxy. Performed model inference and evaluation (ROUGE, BERTScore) on Hugging Face VLMs.",
+      "bitcraze2": "Designed and implemented a custom ROS2 module for height mapping in a 2D environment using the Crazyflie drone. Developed efficient flight path planning with a lawnmower algorithm and optimized obstacle avoidance using the A* pathfinding algorithm.",
+      "home4strays2": "Designed and developed a web application to connect stray animals with suitable adopters, using data such as geographic proximity and user capacity to optimize matching.",
+      "hands-on-ai2": "Authored a practical guide for integrating and customizing open-source language models in classroom environments, utilizing prompt engineering and Retrieval-Augmented Generation (RAG)."
+    },
+    "future": {
+      "future": "Future",
+      "homelab": "Planning to build a homelab for experimenting with large language models, developing custom household robotics, and self-hosting personal web services.",
+      "home4strays": "Deploy home4strays.",
+      "leetcode": "To become a good developer I want to excell in solving leetcode problems."
+    }
+  },
+  "skills": {
+    "header": "Skills",
+    "languages": "Programming languages: Python, Java, TypeScript, JavaScript, HTML, CSS/SCSS, C#, C, Bash, Kotlin, Rust",
+    "tools": "Technologies and Tools: Git, Celery, Redis, Jupyter, Unity, Docker, Kubernetes, Selenium, Ollama, Transformers, Weblate, ROS Humble, JWT, LDAP, PostgreSQL, SQLite, ORM",
+    "frameworks": "Frameworks: Angular, Flask, FastAPI, Django, React Native, Next.js, Express, Spring Boot, Tailwind",
+    "network": "Networking and Deployment: Caddy, Uvicorn, Gunicorn, Nginx (basic), iptables (basic)",
+    "xr": "XR and Mixed Reality: MRTK3, Unity, HoloLens 2"
+  },
+  "aims": {
+    "header": "Aims",
+    "commit": "As of the beginning of 2026 I commited myself to following goals:",
+    "g1": "Establish healthy morning routine: stretching, meditation, journaling",
+    "g2": "Daily walk 30 minutes",
+    "g3": "Sugar-free diet",
+    "g4": "Reduce screen-time with hobbies",
+    "g5": "Daily solve leetcode for 30 minutes",
+    "g6": "Internalize Feyman technique"
+  },
+  "hobbies": {
+    "header": "hobbies",
+    "xinging": "Watching the chinese monkey xinging eating veggies on YouTube (soo satisfying!)",
+    "saved": "Undertaking various activities inspired by my saved list on Insta and Pinterest -> Drawing, cooking, watching movies, diy",
+    "dried-meat": "I love the process of making my own 'Pastirma' -> Cured Beef",
+    "strays": "Feeding strays.",
+    "leetcode": "Leetcoding (soo fun!)",
+    "trash": "Collecting trash."
+  },
+  "mindset": {
+    "header": "Mindset",
+    "guide": "My guiding principles:",
+    "humble": "Growth comes from questioning what I think I know - so I aim to stay humble. And if I can't explain my knowledge to a 10-year old then I can't call it 'knowledge', its just memorized letters.",
+    "discipline": "I believe that discipline, a constructive mindset, and step-by-step improvement are key to success.",
+    "minimalistic": "A decluttered life is a decluttered head with space for lots of creativity.",
+    "hope": "If it's been raining in your head for months just think about all the flowers that are going to bloom."
+  }
+}
