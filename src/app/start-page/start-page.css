@@ -1,32 +1,35 @@
-h1 {
+.name {
   justify-content: center;
   margin-top: 5rem;
   font-size: 3rem;
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  color: var(--green);
+  color: var(--color-text-primary);
 }
 
-h2 {
+.welcome {
   text-align: center;
   margin-top: 10px;
+  color: var(--color-text-secondary);
 }
 
-.tea-w-bubble-container {
+.bubble-figure-container {
   justify-content: center;
   align-content: center;
   display: flex;
-  width: 100%;
 }
 
-img {
+.figure {
   width: 200px;
-  height: auto;
-  border: none;
-  margin-top: 2rem;
+  height: 200px;
   display: inline-block flow-root;
-  position: relative;
+}
+
+@media (max-width: 767.98px){
+  .figure {
+
+  }
 }
 
 .bubble {
@@ -35,22 +38,22 @@ img {
   margin: 20px;
   margin-top: 40px;
   margin-left: 50px;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color-bg-bubble);
+  color: var(--color-text-primary);
   padding: 4px;
   box-shadow:
-    0 -4px #fff,
-    0 -8px #000,
-    4px 0 #fff,
-    4px -4px #000,
-    8px 0 #000,
-    0 4px #fff,
-    0 8px #000,
-    -4px 0 #fff,
-    -4px 4px #000,
-    -8px 0 #000,
-    -4px -4px #000,
-    4px 4px #000;
+    0 -4px var(--color-bg-bubble),
+    0 -8px var(--color-accent),
+    4px 0 var(--color-bg-bubble),
+    4px -4px var(--color-accent),
+    8px 0 var(--color-accent),
+    0 4px var(--color-bg-bubble),
+    0 8px var(--color-accent),
+    -4px 0 var(--color-bg-bubble),
+    -4px 4px var(--color-accent),
+    -8px 0 var(--color-accent),
+    -4px -4px var(--color-accent),
+    4px 4px var(--color-accent);
   box-sizing: border-box;
   width: 11rem;
   height: 100px;
@@ -91,21 +94,21 @@ img {
 
 .bubble.shadow {
   box-shadow:
-    0 -4px #fff,
-    0 -8px #000,
-    4px 0 #fff,
-    4px -4px #000,
-    8px 0 #000,
-    0 4px #fff,
-    0 8px #000,
-    -4px 0 #fff,
-    -4px 4px #000,
-    -8px 0 #000,
-    -4px -4px #000,
-    4px 4px #000,
-    4px 12px rgba(0, 0, 0, 0.5),
-    12px 4px rgba(0, 0, 0, 0.5),
-    8px 8px rgba(0, 0, 0, 0.5);
+    0 -4px var(--color-bg-bubble),
+    0 -8px var(--color-accent),
+    4px 0 var(--color-bg-bubble),
+    4px -4px var(--color-accent),
+    8px 0 var(--color-accent),
+    0 4px var(--color-bg-bubble),
+    0 8px var(--color-accent),
+    -4px 0 var(--color-bg-bubble),
+    -4px 4px var(--color-accent),
+    -8px 0 var(--color-accent),
+    -4px -4px var(--color-accent),
+    4px 4px var(--color-accent),
+    4px 12px var(--shadow-color-after),
+    12px 4px var(--shadow-color-after),
+    8px 8px var(--shadow-color-after);
 }
 
 .bubble::after {
@@ -121,19 +124,19 @@ img {
   bottom: -8px;
   right: 32px;
   box-shadow:
-    0 4px #000,
-    0 8px #000,
-    0 12px #000,
-    0 16px #000,
-    -4px 12px #000,
-    -8px 8px #000,
-    -12px 4px #000,
-    -4px 4px #fff,
-    -8px 4px #fff,
-    -4px 8px #fff,
-    -4px 0 #fff,
-    -8px 0 #fff,
-    -12px 0 #fff;
+    0 4px var(--color-accent),
+    0 8px var(--color-accent),
+    0 12px var(--color-accent),
+    0 16px var(--color-accent),
+    -4px 12px var(--color-accent),
+    -8px 8px var(--color-accent),
+    -12px 4px var(--color-accent),
+    -4px 4px var(--color-bg-bubble),
+    -8px 4px var(--color-bg-bubble),
+    -4px 8px var(--color-bg-bubble),
+    -4px 0 var(--color-bg-bubble),
+    -8px 0 var(--color-bg-bubble),
+    -12px 0 var(--color-bg-bubble);
 }
 
 .bubble:hover {
@@ -143,29 +146,37 @@ img {
   cursor: pointer;
 }
 
-.span-wrap {
+.text-container {
   display: inline-block;
   width: 100%;
-  background-color: transparent;
 }
 
-.type {
+.text {
   font-family: 'Silkscreen', sans-serif;
   font-size: 10px;
   display: inline-block;
   margin: 0;
-  background-color: transparent;
   letter-spacing: 0.3em;
   overflow: hidden;
   white-space: pre-wrap;
   word-break: break-word;
 }
 
-.btn-container {
+.bubble-container {
   display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  width: 100%;
+  flex-direction: column;
+
+  gap: 8px;
+}
+.restart-container {
+  width: 100%;            
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.restart-btn {
+  display: inline-block;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {
@@ -176,6 +187,5 @@ img {
 
 @media (max-width: 700px) {
   .restart-btn {
-    margin-left: 20rem;
   }
 }

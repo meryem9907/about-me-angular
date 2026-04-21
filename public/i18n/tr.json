@@ -1,0 +1,81 @@
+{
+  "LANGUAGE": {
+    "CURRENT": "{{lang}} | >>"
+  },
+  "welcome": "Sayfama hosgeldiniz!",
+  "message": {
+    "part1": "Selam! Gizli sayfamı keşfetmişsin 👾 hoş geldin!",
+    "part2": "Hadi gel, biraz rahatla — bir fincan matcha latte eşliğinde sohbet edelim mi? 🍵💚",
+    "part3": "Küçük bir keşif yolculuğuna hazır mısın?",
+    "part4": "O zaman başlayalım… *LEVEL 1: Tanışma zamanı!* 🎮",
+    "part5": "Ben Meryem Ünüvar — biraz insan, biraz da kod büyücüsü 🧙‍♀️💻",
+    "part6": "En sevdiğim alan mı? Web geliştirme — frontend, backend fark etmez, hepsine bayılıyorum ⚡",
+    "part7": "Peki, nereden başlamak istersin? 🎯 (İlgi alanları, yetenekler ya da bakış açım?)"
+  },
+  "restart": "Yenile",
+  "career": {
+    "header": "Kariyer",
+    "2022-2026": "Eğitim Süreci: Bilgisayar Bilimleri (B.Sc.)",
+    "startStudy": "Augsburg Teknik Üniversitesi'nde Bilgisayar Bilimleri eğitimine başladım",
+    "endStudy": "Augsburg Teknik Üniversitesi'nde Bilgisayar Bilimleri lisans eğitimimi tamamladım (Bachelor of Science)",
+    "iam1": "IAM Solutions'ta 4 aylık öğrenci çalışan – Angular Frontend Geliştirme",
+    "iam2": "Angular tabanlı erişim yönetimi platformuna çeşitli özellikler geliştirme ve entegrasyon; Lighthouse ile WCAG uyumluluğu, özel CSV export, Weblate ile lokalizasyon geliştirme, hata yönetimi iyileştirmeleri ve Mockoon ile REST API prototipleme.",
+    "forvia1": "Forvia'da 4 aylık staj",
+    "forvia2": "Python (Flask) tabanlı REST backend’de Celery ve Redis ile message queue implementasyonu yaparak request throughput’u artırma. Ayrıca Docker, Kubernetes ile mikroservis mimarisi ve Angular frontend geliştirme deneyimi kazanma."
+  },
+  "projects": {
+    "past": {
+      "past": "Geçmiş",
+      "header": "Projeler",
+      "thesis1": "Lisans tezi – Karma Gerçeklik Platformunda VLM'lerin Grafik Anlama Yetisi",
+      "bitcraze1": "Otonom drone ile yükseklik haritalama (Bitcraze)",
+      "home4strays1": "Kendi başlatılan dönem projesi “Home4Strays”.",
+      "hands-on-ai1": "Jupyter Notebook ile uygulamalı dil yapay zekası geliştirme",
+      "thesis2": "HoloLens 2 için geliştirilen “Cha-Cha Lens” adlı XR uygulaması ile görme engelli kullanıcıların grafikleri yerel çalışan bir vision-language model ile anlamasını sağlama. FastAPI ve Uvicorn ile containerized REST backend geliştirme ve Caddy reverse proxy ile güvenli bağlantı sağlama. Hugging Face VLM'leri ile inference ve evaluation (ROUGE, BERTScore).",
+      "bitcraze2": " Crazyflie drone kullanarak 2D ortamda yükseklik ölçümü için özel bir ROS2 modülü geliştirme. Lawnmower algoritması ile uçuş planlama ve A* algoritması ile engel kaçınma.",
+      "home4strays2": "KSokak hayvanlarını uygun sahiplerle eşleştiren bir web uygulaması geliştirme (konum ve kapasite bazlı).",
+      "hands-on-ai2": "Açık kaynak dil modellerinin eğitimde kullanımı ve özelleştirilmesi için rehber hazırlama (prompt engineering ve RAG kullanımı)."
+    },
+    "future": {
+      "future": "Gelecek",
+      "homelab": "LLM’leri denemek, ev tipi robotik geliştirmek ve kişisel web servislerini self-host etmek için bir homelab kurmayı planlıyorum.",
+      "home4strays": "Home4Strays projesini yayına almak.",
+      "leetcode": "Daha iyi bir yazilimci olmak için LeetCode problemlerinde ustalaşmak."
+    }
+  },
+  "skills": {
+    "header": "Yetenekler",
+    "languages": "Programlama dilleri: Python, Java, TypeScript, JavaScript, HTML, CSS/SCSS, C#, C, Bash, Kotlin, Rust",
+    "tools": "Teknolojiler ve Araçlar: Git, Celery, Redis, Jupyter, Unity, Docker, Kubernetes, Selenium, Ollama, Transformers, Weblate, ROS Humble, JWT, LDAP, PostgreSQL, SQLite, ORM",
+    "frameworks": "Frameworkler: Angular, Flask, FastAPI, Django, React Native, Next.js, Express, Spring Boot, Tailwind",
+    "network": "Ağ ve Dağıtım: Caddy, Uvicorn, Gunicorn, Nginx (temel), iptables (temel)",
+    "xr": "XR ve Karma Gerçeklik: MRTK3, Unity, HoloLens 2"
+  },
+  "aims": {
+    "header": "Hedefler",
+    "commit": "2026 başından itibaren şu hedeflere odaklandım:",
+    "g1": "Sağlıklı sabah rutini oluşturmak: esneme, meditasyon, journaling",
+    "g2": "Günlük 30 dakika yürüyüş",
+    "g3": "Şekersiz beslenme",
+    "g4": "Hobilerle ekran süresini azaltmak",
+    "g5": "Her gün 30 dakika LeetCode çözmek",
+    "g6": "Feynman tekniğini içselleştirmek"
+  },
+  "hobbies": {
+    "header": "Hobiler",
+    "xinging": "YouTube’da Çinli maymun Xingxing’in sebze yemesini izlemek",
+    "saved": "Instagram ve Pinterest’te kaydettiklerimden ilham alarak aktiviteler yapmak → çizim, yemek, film, DIY",
+    "dried-meat": "Kendi pastırmamı yapma sürecini seviyorum",
+    "strays": "Sokak hayvanlarını beslemek",
+    "leetcode": "LeetCode çözmek (çok eğlenceli!)",
+    "trash": "Çöp toplamak."
+  },
+  "mindset": {
+    "header": "Bakış Açısı",
+    "guide": "Benim temel prensiplerim:",
+    "humble": "Gelişim, bildiğimi sandığım şeyleri sorgulamakla başlar. Bu yüzden mütevazı kalmaya çalışıyorum. Bir şeyi 10 yaşındaki birine açıklayamıyorsam, bu gerçek bilgi değildir, sadece ezberdir.",
+    "discipline": "Disiplin, yapıcı bir bakış açısı ve adım adım ilerlemenin başarıya götürdüğüne inanıyorum.",
+    "minimalistic": "Minimalist bir hayat, yaratıcı düşünce için alan açan berrak bir zihindir.",
+    "hope": "Eğer kafanda aylarca yağmur yağdıysa, açacak çiçekleri düşün."
+  }
+}

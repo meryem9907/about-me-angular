@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, input, OnDestroy } from '@angular/core';
-import { TypeService } from '../start-page/type.service';
+import { TyperService } from '../start-page/typer.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { Timeline } from '../timeline/timeline';
 
 @Component({
   selector: 'app-content-modals',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe, Timeline],
   templateUrl: './content-modals.html',
   styleUrl: './content-modals.css',
 })
 export class ContentModals {
-  typeService = inject(TypeService);
+  typerService = inject(TyperService);
   contentType = input<string>();
 
   toggleModal() {
-    this.typeService.showModal.update((show) => !show);
+    this.typerService.showContentDropdown.update((show) => !show);
   }
 }

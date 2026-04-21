@@ -1,36 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
-
-* {
-  background-color: #f5ebdd;
+:root {
+  color-scheme: light dark;
   font-family: 'Silkscreen', sans-serif;
-  width: 100%;
+  /* surfaces */
+  --color-bg: light-dark(#f6f1ee, #140f18);
+    --color-bg-bubble: light-dark(#f6f1ee, #251c2c);
+  --color-bg-alt: light-dark(#eedbd3, #3c2f4a);
+  --color-surface: light-dark(#fff7f4, #241c2d);
+  --color-surface-raised: light-dark(#fac9b8, #2f243a);
+
+  /* text */
+  --color-text-primary: light-dark(#2f243a, #f3ddd5);
+  --color-text-secondary: light-dark(#503f61, #bdada7);
+    --color-text-tertiary: light-dark(#923857, #eaa7d6);
+
+  --color-text-muted: light-dark(#5c5568, #bebbbb);
+  --color-text-inverse: light-dark(#fff7f4, #1a141f);
+
+  /* borders */
+  --color-border: light-dark(#444054, #6d6780);
+  --color-border-soft: light-dark(#bebbbb, #444054);
+
+  /* brand / interactive */
+  --color-primary: light-dark(#b85f4b, #db8a74);
+  --color-primary-shade-l: light-dark(#d18270, #fda188);
+  --color-primary-shade-d: light-dark(#8f4737, #af6e5c);
+
+  --color-primary-hover: light-dark(#9f5240, #e7a08d);
+  --color-primary-hover-shade-l: light-dark(#c96f5b, #faaf9a);
+  --color-primary-hover-shade-d: light-dark(#804335, #c48978);
+
+  --color-primary-active: light-dark(#874131, #c97762);
+
+  /* accents */
+  --color-accent: light-dark(#444054, #fac9b8);
+  --color-accent-soft: light-dark(#e8d2ca, #3a2d46);
+
+  /* states */
+  --color-success: light-dark(#4f7a5a, #7fb089);
+    --color-success-inner: light-dark(#80b88e, #71ba80);
+
+  --color-success-shade: light-dark(#639870, #92c69c);
+  --color-warning: light-dark(#a06a2c, #d49a52);
+  --color-danger: light-dark(#a14646, #d97c7c);
+
+  /* shadows for pixel UI */
+  --shadow-color: light-dark(rgba(47, 36, 58, 0.28), rgba(0, 0, 0, 0.55));
+  --shadow-color-after: light-dark(rgba(0, 0, 0, 0.5), rgba(233, 183, 183, 0.55));
+  --shadow-color-strong: light-dark(rgba(47, 36, 58, 0.4), rgba(0, 0, 0, 0.8));
+
+
+
+}
+
+/* manual theme override */
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
 }
 
 body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
   max-width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 button {
-  width: auto;
-  min-width: fit-content;
   margin: 0 5px;
   position: relative;
-  background-color: #fff;
+  color: var(--color-text);
+  font-family: 'Silkscreen', sans-serif;
+  background-color: var(--color-primary);
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
   cursor: pointer;
-  border: 3px solid;
+  border: 3px solid var(--color-border);
   padding: 0.25em 0.5em;
   box-shadow:
-    1px 1px 0px 0px,
-    2px 2px 0px 0px,
-    3px 3px 0px 0px,
-    4px 4px 0px 0px,
-    5px 5px 0px 0px;
+    inset -4px -4px 0 var(--color-primary-shade-d),
+    inset 4px 4px 0 var(--color-primary-shade-l),
+    4px 4px 0 #000;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -39,11 +96,15 @@ button {
 
 button:active {
   box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
 }
 
 button:hover {
-  background: var(--yellow);
-  transform: scale(1.05) rotate(1deg);
+  background: var(--color-primary-hover);
+  color: var(--color-text);
+
+  transform: translate(2px, 2px);
+  box-shadow:
+    inset -4px -4px 0 var(--color-primary-hover-shade-d),
+    inset 4px 4px 0 var(--color-primary-hover-shade-l),
+    2px 2px 0 var(--color-border);
 }

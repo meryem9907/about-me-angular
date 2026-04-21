@@ -1,7 +1,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--shadow-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,17 +13,58 @@
   border-radius: 8px;
   width: 300px;
   height: 300px;
-  background-color: rgba(224, 217, 100, 0.8);
+  background-color: var(--color-bg);
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 1050;
 }
+
 h3 {
   text-align: center;
+  color: var(--color-text-tertiary)
+}
+h4 {
+  color: var(--color-success)
 }
 p {
   background-color: transparent;
 }
 li {
   background-color: transparent;
+}
+
+.timeline-box{
+  width: fit-content;
+  height: 600px;
+
+}
+
+.pastirma {
+  display: flex;
+     left: 8px;
+    top: 4px;
+    width: 35%;
+  justify-self: center;
+}
+.cats {
+  display: flex;
+     left: 8px;
+    top: 4px;
+    width: 35%;
+  justify-self: center;
+}
+
+.leetcoder {
+  display: flex;
+     left: 8px;
+    top: 4px;
+    width: 50%;
+  justify-self: center;
+}
+@media (max-width: 767.98px) {
+  /* .timeline-box{
+  width: 350px;
+  height: 600px;
+
+} */
 }

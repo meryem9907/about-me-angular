@@ -12,28 +12,27 @@
   margin: 2rem auto;
   width: fit-content;
   font-size: 14px;
-  color: #000;
 }
 
 .pixel-list li {
-  background: #fff;
+  background: var(--color-primary);
   margin: 8px 0;
   padding: 8px 16px;
   cursor: pointer;
   text-align: center;
   box-shadow:
-    0 -2px #000,
-    0 2px #000,
-    -2px 0 #000,
-    2px 0 #000,
-    -2px -2px #000,
-    2px -2px #000,
-    -2px 2px #000,
-    2px 2px #000;
+    0 -2px var(--color-border),
+    0 2px var(--color-border),
+    -2px 0 var(--color-border),
+    2px 0 var(--color-border),
+    -2px -2px var(--color-border),
+    2px -2px var(--color-border),
+    -2px 2px var(--color-border),
+    2px 2px var(--color-border);
   transition: transform 0.1s;
 }
 
 .pixel-list li:hover {
-  background: var(--yellow);
+  background: var(--color-primary-hover);
   transform: scale(1.05) rotate(1deg);
 }

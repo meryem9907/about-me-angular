@@ -1,0 +1,82 @@
+{
+  "LANGUAGE": {
+    "CURRENT": "{{lang}} | >>"
+  },
+  "welcome": "Willkommen bei mir!",
+  "message": {
+    "part1": "Hey! Schön, dass du hier bist – du hast meine versteckte Seite entdeckt 👾",
+    "part2": "Mach’s dir gemütlich – wie wäre es mit einem Matcha Latte? 🍵💚",
+    "part3": "Bereit, ein bisschen auf Entdeckungsreise zu gehen?",
+    "part4": "Dann los… *LEVEL 1: Willkommen!* 🎮",
+    "part5": "Ich bin Meryem Ünüvar – halb Mensch, halb Code-Zauberin 🧙‍♀️💻",
+    "part6": "Mein Spezialgebiet? Webentwicklung – egal ob Frontend oder Backend, ich liebe einfach alles daran ⚡",
+    "part7": "Also, womit möchtest du starten? 🎯 (Interessen, Skills oder Mindset?)"
+  },
+  "restart": "Neustart",
+  "career": {
+    "header": "Beruflicher Werdegang",
+
+    "startStudy": "Beginn des Informatikstudiums an der Technischen Hochschule Augsburg",
+    "endStudy": "Abschluss des Informatikstudiums (Bachelor of Science) an der Technischen Hochschule Augsburg",
+    "2022-2026": "Studium: Informatik (B.Sc.)",
+    "iam1": "4-monatige Werkstudententätigkeit bei IAM Solutions – Angular Frontend-Entwicklung",
+    "iam2": "Entwicklung und Integration von Features in eine Angular-basierte Plattform für Berechtigungsmanagement, darunter WCAG-Konformität durch Lighthouse-Analysen, ein benutzerdefinierter CSV-Export, Erweiterung der Lokalisierung mit Weblate, verbesserte Fehlerbehandlung sowie Prototyping von REST-APIs mit Mockoon.",
+    "forvia1": "4-monatiges Praktikum bei Forvia",
+    "forvia2": "Implementierung einer Message Queue mit Celery und Redis in einem Python (Flask) REST-Backend zur Verbesserung des Request-Durchsatzes. Zusätzlich praktische Erfahrung mit Docker, Microservices-Architektur mit Kubernetes sowie Angular-Frontend-Entwicklung."
+  },
+  "projects": {
+    "past": {
+      "past": "Vergangenheit",
+      "header": "Projekte",
+      "thesis1": "Bachelorarbeit – Chart Understanding of VLMs on a Mixed Reality Platform",
+      "thesis2": "Entwicklung von „Cha-Cha Lens“, einer XR-Anwendung für die HoloLens 2, die sehbeeinträchtigten Nutzern das Verstehen von Diagrammen mithilfe eines lokal gehosteten Vision-Language-Modells ermöglicht. Entwicklung eines containerisierten REST-Backends mit FastAPI und Uvicorn, abgesichert über einen Caddy Reverse Proxy. Durchführung von Inferenz und Evaluation (ROUGE, BERTScore) mit Hugging Face VLMs.",
+      "bitcraze1": "Autonome Drohne zur Höhenvermessung (Bitcraze)",
+      "bitcraze2": "Entwicklung eines ROS2-Moduls zur Höhenkartierung in einer 2D-Umgebung mit der Crazyflie-Drohne. Umsetzung effizienter Flugroutenplanung mittels Lawnmower-Algorithmus und optimierter Hindernisvermeidung mit dem A*-Algorithmus.",
+      "home4strays1": "Selbstinitiiertes Semesterprojekt „Home4Strays“",
+      "home4strays2": "Entwicklung einer Webanwendung zur Vermittlung von Straßentieren an geeignete Halter auf Basis von Standortnähe und verfügbaren Kapazitäten.",
+      "hands-on-ai1": "Entwicklung einer praxisnahen Sprach-KI mit Jupyter Notebooks.",
+      "hands-on-ai2": "Erstellung einer Anleitung zur Integration und Anpassung von Open-Source-Sprachmodellen im Unterricht unter Einsatz von Prompt Engineering und Retrieval-Augmented Generation (RAG)."
+    },
+    "future": {
+      "future": "Zukunft",
+      "homelab": "Aufbau eines Homelabs zum Experimentieren mit Large Language Models, zur Entwicklung eigener Haushaltsrobotik sowie zum Self-Hosting eigener Webanwendungen.",
+      "home4strays": "Deployment von Home4Strays.",
+      "leetcode": "Um eine gute Entwicklerin zu werden, möchte ich meine Fähigkeiten im Lösen von LeetCode-Aufgaben gezielt verbessern."
+    }
+  },
+  "skills": {
+    "header": "Fähigkeiten",
+    "languages": "Programmiersprachen: Python, Java, TypeScript, JavaScript, HTML, CSS/SCSS, C#, C, Bash, Kotlin, Rust",
+    "tools": "Technologien und Tools: Git, Celery, Redis, Jupyter, Unity, Docker, Kubernetes, Selenium, Ollama, Transformers, Weblate, ROS Humble, JWT, LDAP, PostgreSQL, SQLite, ORM",
+    "frameworks": "Frameworks: Angular, Flask, FastAPI, Django, React Native, Next.js, Express, Spring Boot, Tailwind",
+    "network": "Netzwerk und Deployment: Caddy, Uvicorn, Gunicorn, Nginx (Grundkenntnisse), iptables (Grundkenntnisse)",
+    "xr": "XR und Mixed Reality: MRTK3, Unity, HoloLens 2"
+  },
+  "aims": {
+    "header": "Ziele",
+    "commit": "Seit Anfang 2026 verfolge ich folgende Ziele:",
+    "g1": "Etablierung einer gesunden Morgenroutine: Stretching, Meditation, Journaling",
+    "g2": "Täglicher Spaziergang (30 Minuten)",
+    "g3": "Zuckerfreie Ernährung",
+    "g4": "Reduzierung der Bildschirmzeit durch Hobbys",
+    "g5": "Täglich 30 Minuten LeetCode-Aufgaben lösen",
+    "g6": "Feynman-Technik verinnerlichen"
+  },
+  "hobbies": {
+    "header": "Hobbys",
+    "xinging": "Chinesischen Affen Xingxing beim Gemüseessen auf YouTube zusehen (sehr entspannend!)",
+    "saved": "Verschiedene Aktivitäten aus meiner gespeicherten Liste auf Instagram und Pinterest ausprobieren → Zeichnen, Kochen, Filme schauen, DIY",
+    "dried-meat": "Ich liebe den Prozess, mein eigenes Pastırma (luftgetrocknetes Rindfleisch) herzustellen",
+    "strays": "Streunertiere füttern",
+    "leetcode": "LeetCode lösen (macht richtig Spaß!)",
+    "trash": "Müll sammeln"
+  },
+  "mindset": {
+    "header": "Mindset",
+    "guide": "Meine Leitprinzipien:",
+    "humble": "Wachstum entsteht, wenn ich hinterfrage, was ich zu wissen glaube – deshalb versuche ich, bescheiden zu bleiben. Und wenn ich etwas nicht einem 10-jährigen Kind erklären kann, ist es kein echtes Wissen, sondern nur auswendig gelernt.",
+    "discipline": "Ich glaube, dass Disziplin, eine konstruktive Denkweise und schrittweise Verbesserung der Schlüssel zum Erfolg sind.",
+    "minimalistic": "Ein aufgeräumtes Leben bedeutet einen klaren Kopf mit Raum für Kreativität.",
+    "hope": "Wenn es in deinem Kopf monatelang geregnet hat, denk daran, wie viele Blumen daraus wachsen werden."
+  }
+}

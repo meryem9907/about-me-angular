@@ -1,16 +1,29 @@
-<h1>Meryem Ünüvar</h1>
-<h2>Welcome to my page!</h2>
+<h1 class="name">Meryem Ünüvar</h1>
+<h2 class="welcome">{{ 'welcome' | translate }}</h2>
 
-<div class="tea-w-bubble-container">
-  <div class="bubble shadow bottom" [class.wiggle]="wiggle()" (click)="onClick()">
-    <span class="span-wrap"
-      ><span class="type" [style.--chars]="typeService.messages.length">
-        {{ typeService.visible() }}</span
-      ></span
-    >
+<div class="bubble-figure-container">
+  <div class="bubble-container">
+    <div class="bubble shadow bottom" [class.wiggle]="wiggle()" (click)="speak()">
+      <span class="text-container"
+        ><span class="text" [style.--chars]="typerService.messages().length">
+          {{ typerService.visibleMsg() }}</span
+        ></span
+      >
+    </div>
+    @if (showRestart()) {
+<div class="restart-container">
+      <button class="restart-btn" (click)="onRestart()">
+        {{ 'restart' | translate }}
+      </button>
+    </div>    }
   </div>
-  <img ngSrc="me_pixel.png" alt="Black tea" width="200" height="200" priority />
+  <img
+    class="figure"
+    src="me_pixel.png"
+    alt="Pixel art representation"
+    width="200"
+    height="200"
+    priority
+  />
 </div>
-<div *ngIf="showButton()" class="btn-container">
-  <button class="restart-btn" (click)="onRestart()">Restart</button>
-</div>
+

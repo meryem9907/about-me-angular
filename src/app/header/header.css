@@ -1,0 +1,50 @@
+.header {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  overflow: visible;
+}
+
+.header-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.light-dark-mode-btn {
+}
+
+.light-dark-mode-img {
+  display: flex;
+  align-self: center;
+  width: 25px;
+  height: 25px;
+}
+.language-wrapper {
+  position: relative;   /* 🔥 THIS is what fixes it */
+  display: inline-block;
+  z-index: 100;
+}
+.language-btn {
+  width: 120px;
+  padding:3.4px
+}
+.language-dropdown {
+ display: flex;
+  flex-direction: column;
+  z-index: 1000000000;
+  transition: 300ms;
+}
+
+.header-divider {
+    position: relative;
+    z-index: -1;
+    margin-top:1rem;
+  border: 4px dashed var(--color-border);
+}

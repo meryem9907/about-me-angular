@@ -1,0 +1,21 @@
+<div class="header">
+  <button class="header-btn" (click)="toggleLightDark()">
+    <img
+      class="light-dark-mode-img"
+      [src]="theme() === 'light' ? 'moon.png' : 'sun.png'"
+      alt="light dark switch"
+    />
+  </button>
+  <div class="language-wrapper">
+  <button class="header-btn language-btn" (click)="toggleLanguage()">
+    {{ ('LANGUAGE.CURRENT' | translate:{ lang: currentLangLabel() }) }}
+  </button>
+  @if (isOpen()) {
+    <div class="language-dropdown" role="menu">
+      <button role="menuitem" (click)="setLanguage('tr')">Türkçe</button>
+      <button role="menuitem" (click)="setLanguage('en')">English</button>
+      <button role="menuitem" (click)="setLanguage('de')">Deutsch</button>
+    </div>
+  }</div>
+</div>
+<hr class="header-divider" />

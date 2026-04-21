@@ -1,7 +1,9 @@
-<app-start-page (showContentBar)="onContentChange($event)"></app-start-page>
-<div *ngIf="showContentBar()">
-  <app-content-bar (contentType)="receiveContent($event)"></app-content-bar>
-</div>
-<app-content-modals [contentType]="contentType()"></app-content-modals>
-
-<app-links></app-links>
+<app-header/>
+<app-start-page (showContentBar)="onContentChange($event)"/>
+@if (showContentBar()) {
+  <div>
+    <app-content-bar (contentType)="receiveContent($event)"/>
+  </div>
+}
+<app-content-modals [contentType]="contentType()"/>
+<app-links/>

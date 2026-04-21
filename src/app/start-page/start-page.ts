@@ -1,62 +1,64 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import {
-  Component,
-  effect,
-  inject,
-  input,
-  OnDestroy,
-  OnInit,
-  output,
-  Signal,
-  signal,
-} from '@angular/core';
-import { TypeService } from './type.service';
+import { Component, effect, inject, OnDestroy, output, signal } from '@angular/core';
+import { TyperService } from './typer.service';
+import { Header } from '../header/header';
+import { TranslatePipe } from '@ngx-translate/core';
+import { Timeline } from '../timeline/timeline';
 
 @Component({
   selector: 'app-start-page',
-  imports: [NgOptimizedImage, CommonModule],
+  imports: [NgOptimizedImage, CommonModule, TranslatePipe, Timeline],
   templateUrl: './start-page.html',
   styleUrl: './start-page.css',
 })
 export class StartPage implements OnDestroy {
   showContentBar = output<boolean>();
-  typeService = inject(TypeService);
+  typerService = inject(TyperService);
   wiggle = signal(true);
-  showButton = signal(false);
+  showRestart = signal(false);
 
   constructor() {
     effect(() => {
-      const msg = this.typeService.currentMessage();
-      this.typeService.type(msg);
+      const msg = this.typerService.currentMsg();
+      console.log("ignite")
+      const messages = this.typerService.messages();
+      this.typerService.typeMsg(msg);
     });
   }
 
-  onRestart() {
-    this.typeService.restart();
-    this.showContentBar.emit(false);
-    this.wiggle.set(true);
-    this.showButton.set(false);
-  }
-
-  onClick() {
-    this.showButton.set(true);
+  speak() {
+    this.showRestart.set(true);
     this.wiggle.set(false);
-    if (this.typeService.msgCounter() + 1 == this.typeService.messages.length) {
-      this.typeService.currentMessage.set(this.typeService.messages[this.typeService.msgCounter()]);
+    // check if last msg
+    if (this.typerService.msgCounter() + 1 == this.typerService.messages().length) {
+      this.typerService.currentMsg.set(
+        this.typerService.messages()[this.typerService.msgCounter()],
+      );   
+      // check if last msg is typed to end
+      console.log(this.typerService.currentMsg())    
+      this.showContentBar.emit(true);
       return;
     }
-    this.typeService.clearTimer();
-    this.typeService.msgCounter.set(this.typeService.msgCounter() + 1);
-    this.typeService.currentMessage.set(this.typeService.messages[this.typeService.msgCounter()]);
-    if (this.typeService.msgCounter() + 1 == this.typeService.messages.length) {
-      this.showContentBar.emit(true);
-    }
+    this.typerService.msgCounter.set(this.typerService.msgCounter() + 1);
+    this.typerService.currentMsg.set(this.typerService.messages()[this.typerService.msgCounter()]);
+  }
+
+
+  onRestart() {
+    this.typerService.restart();
+    this.showContentBar.emit(false);
+    this.wiggle.set(true);
+    this.showRestart.set(false);
   }
 
   ngOnDestroy() {
     this.wiggle.set(true);
-    this.typeService.clearTimer();
+    this.typerService.clearTimer();
+    this.typerService.langChangedSub.update((sub) => {
+      sub.unsubscribe();
+      return sub;
+    });
     this.onRestart();
-    this.showButton.set(false);
+    this.showRestart.set(false);
   }
 }
