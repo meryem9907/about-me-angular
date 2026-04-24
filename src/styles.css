@@ -4,7 +4,7 @@
   font-family: 'Silkscreen', sans-serif;
   /* surfaces */
   --color-bg: light-dark(#f6f1ee, #140f18);
-    --color-bg-bubble: light-dark(#f6f1ee, #251c2c);
+    --color-bg-bubble: light-dark(#fffbf8, #251c2c);
   --color-bg-alt: light-dark(#eedbd3, #3c2f4a);
   --color-surface: light-dark(#fff7f4, #241c2d);
   --color-surface-raised: light-dark(#fac9b8, #2f243a);

@@ -21,15 +21,11 @@
 }
 
 .figure {
-  width: 200px;
-  height: 200px;
+width: 300px;
+height: auto;
+
   display: inline-block flow-root;
-}
-
-@media (max-width: 767.98px){
-  .figure {
-
-  }
+    image-rendering: pixelated; /* keeps pixel crisp */
 }
 
 .bubble {
@@ -142,7 +138,6 @@
 .bubble:hover {
   transform: scale(1.05) rotate(2deg);
   transition: all 0.2s ease;
-
   cursor: pointer;
 }
 
