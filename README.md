@@ -1,6 +1,10 @@
-# AboutMePage
+# About Me Page in Angular 
 
+This is my personal Angular based About Me Page. Feel free to look around. 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+
+## Public link
+https://meryem9907.github.io/about-me-angular/
 
 ## Development server
 
